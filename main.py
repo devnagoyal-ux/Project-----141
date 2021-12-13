@@ -14,7 +14,7 @@ not_liked_articles = []
 app = Flask(__name__)
 
 @app.route("/get-article")
-def get_movie() :
+def get_article() :
     return jsonify({
         "data" : all_articles[0] ,
         "status" : "success"
